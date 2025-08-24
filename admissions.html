@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Sarkari Updates</title>
+    <meta name="description" content="Find the latest admission notifications for universities, colleges, and government institutions. Your guide to entrance exams and application processes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #111827; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .bg-primary { background-color: #1A374D; }
+        .text-primary { color: #1A374D; }
+        .bg-secondary { background-color: #406882; }
+        .text-secondary { color: #406882; }
+        .nav-link { @apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors; }
+        .hero-section { background: linear-gradient(45deg, #1A374D, #111827); }
+        .cta-button { @apply inline-block bg-secondary text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300; }
+        .feature-card { @apply bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300; }
+        .testimonial-card { @apply bg-white p-8 rounded-xl shadow-lg; }
+        .admission-card { @apply bg-gray-50 p-8 rounded-xl shadow-lg border-t-4; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation Bar -->
+    <header id="header" class="bg-primary text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold" aria-label="Sarkari Updates Home">Sarkari Updates</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="latest-jobs.html" class="inline-block bg-white text-primary font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition-colors">View Jobs</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none" aria-label="Open menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#features" class="block py-2 px-4 text-sm text-gray-300 hover:bg-secondary">Features</a>
+            <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-300 hover:bg-secondary">Testimonials</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-300 hover:bg-secondary">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Visually Striking Hero Section -->
+        <section class="hero-section text-white py-24">
+            <div class="container mx-auto px-6 text-center">
+                <div class="reveal">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight">University & College Admissions</h1>
+                    <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-3xl mx-auto">Your next step starts here. Find admission details for top government institutions and entrance exams.</p>
+                    <a href="#latest-admissions" class="cta-button mt-8" aria-label="Scroll to latest admissions">Explore Admissions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Simplified Admission Process</h2>
+                    <p class="text-gray-600 mt-2">All the information you need to apply.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="feature-card text-center reveal">
+                        <h3 class="text-xl font-bold text-primary">Centralized Info</h3>
+                        <p class="mt-2 text-gray-600">Get dates, eligibility, and application links for multiple universities all in one place.</p>
+                    </div>
+                    <div class="feature-card text-center reveal">
+                        <h3 class="text-xl font-bold text-primary">Entrance Exam Alerts</h3>
+                        <p class="mt-2 text-gray-600">Stay updated on major entrance exams like CUET, JEE, NEET, and more.</p>
+                    </div>
+                    <div class="feature-card text-center reveal">
+                        <h3 class="text-xl font-bold text-primary">Step-by-Step Guides</h3>
+                        <p class="mt-2 text-gray-600">Follow our simple guides to navigate the application process for different institutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Admissions Section -->
+        <section id="latest-admissions" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Latest Admissions Open</h2>
+                    <p class="text-gray-600 mt-2">Find your course and apply now.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="admission-card border-secondary reveal">
+                        <img src="https://placehold.co/80x80/1A374D/FFFFFF?text=DU" alt="Delhi University Logo" class="mx-auto rounded-full">
+                        <h3 class="text-xl font-bold text-center mt-4">Delhi University UG Admissions</h3>
+                        <p class="text-center text-gray-500 mt-2">Last Date: <span class="font-bold text-red-600">30 Sep 2025</span></p>
+                        <a href="#" class="w-full block text-center mt-6 bg-primary text-white font-semibold py-3 px-4 rounded-lg hover:bg-secondary transition-colors">View Details</a>
+                    </div>
+                    <div class="admission-card border-secondary reveal">
+                        <img src="https://placehold.co/80x80/c0392b/FFFFFF?text=IGNOU" alt="IGNOU Logo" class="mx-auto rounded-full">
+                        <h3 class="text-xl font-bold text-center mt-4">IGNOU July 2025 Session</h3>
+                        <p class="text-center text-gray-500 mt-2">Last Date: <span class="font-bold text-red-600">15 Sep 2025</span></p>
+                        <a href="#" class="w-full block text-center mt-6 bg-primary text-white font-semibold py-3 px-4 rounded-lg hover:bg-secondary transition-colors">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">From Our Users</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="testimonial-card reveal">
+                        <p class="text-gray-600">"I was confused about the CUET application process, but this site had a clear guide that helped me apply correctly. I got into my dream college!"</p>
+                        <p class="text-primary font-bold mt-4">- Rohan D.</p>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <p class="text-gray-600">"The timely reminders for application deadlines are a fantastic feature. I almost missed the last date for my masters program."</p>
+                        <p class="text-primary font-bold mt-4">- Aisha F.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2">Have questions about an admission process? Let us know.</p>
+                </div>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg reveal">
+                    <form action="#" method="POST">
+                        <div class="space-y-6">
+                            <div>
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" name="name" id="name" autocomplete="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="Full Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input type="email" name="email" id="email" autocomplete="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="Email Address" required>
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full cta-button" aria-label="Send your message">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-gray-300">
+        <div class="container mx-auto py-12 px-6 text-center">
+            <p>&copy; 2025 Sarkari Updates. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // ScrollReveal Animations
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '50px',
+            origin: 'bottom',
+            easing: 'ease-in-out',
+            reset: false
+        });
+    </script>
+</body>
+</html>

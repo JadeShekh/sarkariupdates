@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarkari Updates - Your Source for Government Jobs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; color: #343A40; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; }
+        .bg-primary { background-color: #1A374D; }
+        .text-secondary { color: #406882; }
+        .bg-secondary-light { background-color: #6998AB; }
+        .bg-accent { background-color: #FFC107; }
+        .nav-link { @apply px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-secondary-light hover:text-white transition-colors duration-300; }
+        .category-card { @apply bg-white p-6 rounded-lg shadow-md border border-gray-200 flex flex-col items-center justify-center text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300; }
+        .modern-btn { background-image: linear-gradient(to right, #1A374D 0%, #406882 51%, #1A374D 100%); background-size: 200% auto; transition: 0.5s; }
+        .modern-btn:hover { background-position: right center; }
+        .tab-button.active { @apply border-secondary text-primary; }
+        .tab-content { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-primary text-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-2xl font-bold font-poppins">Sarkari Updates</a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="latest-jobs.html" class="nav-link">Latest Jobs</a>
+                        <a href="admit-card.html" class="nav-link">Admit Card</a>
+                        <a href="results.html" class="nav-link">Results</a>
+                        <a href="answer-key.html" class="nav-link">Answer Key</a>
+                        <a href="syllabus.html" class="nav-link">Syllabus</a>
+                        <a href="admissions.html" class="nav-link">Admissions</a>
+                    </div>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-button" class="p-2"><svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden"><div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="latest-jobs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Latest Jobs</a>
+            <a href="admit-card.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Admit Card</a>
+            <a href="results.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+        </div></div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 text-center bg-white reveal">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl md:text-6xl font-bold text-primary tracking-tight">Find Your Future Government Job</h1>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Your trusted source for the latest Sarkari job notifications, results, and admit cards.</p>
+                <div class="mt-8 max-w-xl mx-auto">
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="text" placeholder="Search for jobs, results..." class="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary">
+                        <button type="submit" class="modern-btn text-white font-semibold px-8 py-3 rounded-lg shadow-sm">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Categories -->
+        <section class="py-16 reveal">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <a href="latest-jobs.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/jnzhohhs.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Latest Jobs</h3></a>
+                    <a href="results.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/wzwygmng.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Results</h3></a>
+                    <a href="admit-card.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/uetqnvpl.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Admit Card</h3></a>
+                    <a href="answer-key.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/yqzmiobz.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Answer Key</h3></a>
+                    <a href="syllabus.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Syllabus</h3></a>
+                    <a href="admissions.html" class="category-card"><lord-icon src="https://cdn.lordicon.com/gqzfzudq.json" trigger="hover" colors="primary:#1A374D,secondary:#406882" style="width:60px;height:60px"></lord-icon><h3 class="font-semibold text-primary mt-3">Admissions</h3></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Tabs -->
+        <section class="py-16 reveal">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-center border-b border-gray-200">
+                    <button class="tab-button active text-lg font-semibold px-6 py-3 border-b-4 border-transparent" data-tab="latest-jobs-tab">Latest Jobs</button>
+                    <button class="tab-button text-gray-500 hover:text-primary text-lg font-semibold px-6 py-3 border-b-4 border-transparent" data-tab="results-tab">Results</button>
+                    <button class="tab-button text-gray-500 hover:text-primary text-lg font-semibold px-6 py-3 border-b-4 border-transparent" data-tab="admit-cards-tab">Admit Cards</button>
+                </div>
+                <div class="mt-8 bg-white rounded-lg shadow-md border overflow-hidden">
+                    <div id="latest-jobs-tab" class="tab-content">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                    <td class="px-6 py-4"><div class="font-medium">SSC CGL 2025 Online Form</div></td>
+                                    <td class="px-6 py-4 text-sm text-gray-500">30/09/2025</td>
+                                    <td class="px-6 py-4 text-right"><a href="job-details.html" class="text-secondary hover:text-primary font-semibold">View Details</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-gray-300">
+        <div class="container mx-auto py-12 px-4">
+            <div class="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
+                <p>&copy; 2025 Sarkari Updates. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        ScrollReveal().reveal('.reveal', { delay: 200, distance: '50px', origin: 'bottom', easing: 'ease-in-out', reset: false });
+        // Add tab functionality script here
+    </script>
+</body>
+</html>
